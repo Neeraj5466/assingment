@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <title>Work in Japan</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-1 fw-bold" href="#">Work in Japan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-4">
+                        <li class="nav-item">
+                            <a href="#jobs" class="btn btn-primary" role="button">Explore Jobs</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-4">
+
+        <section id="home" class="mb-5">
+            <h2 class="h1 text-center">Your Dream Job Awaits in the Land of the Rising Sun</h2>
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/one.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h1 class="fw-bolder ">Work Culture</h1 class="fw-bolder bg-dark">
+                            <p class="fs-4">Learn about Japan's unique work environment, known for its dedication and
+                                collaboration.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/two.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h1 class="fw-bolder ">Benefits & Perks</h1 class="fw-bolder bg-dark">
+                            <p class="fs-4">Discover the attractive benefits offered by Japanese companies, including
+                                extensive
+                                vacation time.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/three.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block bg-dark">
+                            <h1 class="fw-bolder ">Visa Information</h1 class="fw-bolder bg-dark">
+                            <p class="fs-4">Get clear guidance on navigating the visa process for working in Japan.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section id="jobs" class="mb-5">
+            <h2 class="h1 text-center">Find Your Perfect Job</h2>
+            <form id="job-search-form">
+                <div class="row mb-3">
+                    <div class="col-md-6 my-2">
+                        <select class="form-select" aria-label="Industry Filter" name="industry" id="industry">
+                            <option value="">All Industries</option>
+                            <option value="Technology">Technology</option>
+                            <option value="Finance">Finance</option>
+                            <option value="Education">Education</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 my-2">
+                        <select class="form-select" aria-label="Location Filter" name="location" id="location">
+                            <option value="">All Locations</option>
+                            <option value="Tokyo">Tokyo</option>
+                            <option value="Osaka">Osaka</option>
+                            <option value="Kyoto">Kyoto</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </div>
+            </form>
+
+            <div id="job-results"></div>
+
+        </section>
+
+        <section id="about" class="mb-5">
+            <h2 class="h1 text-center my-4">Experience Life in Japan</h2>
+            <div class="row">
+                <div class="col-md-4 my-4  ">
+                    <div class="card border-0 shadow-lg" style="width: 18rem;">
+                        <img src="assets/images/1.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Culture & Traditions</h5>
+                            <p class="card-text">Immerse Japan's rich culture, from ancient traditions to modern
+                                trends.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 my-4 ">
+
+                    <div class="card border-0 shadow-lg" style="width: 18rem;">
+                        <img src="assets/images/2.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Lifestyle & Leisure</h5>
+                            <p class="card-text">Explore the vibrant cities, serene countryside of
+                                Japan.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-4 my-4  ">
+
+                    <div class="card border-0 shadow-lg" style="width: 18rem;">
+                        <img src="assets/images/3.jpg" class="card-img-top" alt="..." height="200px">
+                        <div class="card-body">
+                            <h5 class="card-title">Cost of Living</h5>
+                            <p class="card-text">Get insights into the cost of living in different regions of Japan.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <h1 class="my-4">FAQs</h1>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            What are the benefits of working in Japan?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>There are many benefits to working in Japan, including a high salary, excellent work-life
+                                balance
+                                (depending on the industry), and a chance to experience a unique culture.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What qualifications do I need to work in Japan?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>The qualifications you need will depend on the specific job you are applying for.
+                                However, most
+                                jobs will require a bachelor's degree and some experience in the relevant field. You may
+                                also
+                                need to be proficient in Japanese.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Is it difficult to get a visa to work in Japan?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>The difficulty of obtaining a visa to work in Japan will depend on your nationality and
+                                the type
+                                of job you are applying for.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top bg-white">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary mx-4">© 2024 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex mx-2">
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#"><i class="fa-brands fa-x-twitter fa-xl"></i></a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary fa-xl" href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="ms-3">
+                    <a class="text-body-secondary" href="#"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </footer>
+
+    <script>
+        const jobs = [
+            {
+                title: 'Software Engineer',
+                description: 'Develop and maintain web applications using cutting-edge technologies.',
+                salary: '$120,000 - $150,000',
+                experience: '3+ years',
+                location: 'Tokyo',
+                industry: 'Technology',
+            },
+            {
+                'title': 'Software Engineer',
+                'description': 'Develop and maintain web applications using cutting-edge technologies.',
+                'salary': '$120,000 - $150,000',
+                'experience': '3+ years',
+                'location': 'Tokyo',
+                'industry': 'Technology',
+            },
+            {
+                'title': 'Financial Analyst',
+                'description': 'Analyze financial data and provide investment recommendations.',
+                'salary': '$80,000 - $100,000',
+                'experience': '2+ years',
+                'location': 'Osaka',
+                'industry': 'Finance',
+            },
+            {
+                'title': 'Teacher',
+                'description': 'Develop and deliver engaging lessons for students.',
+                'salary': '$50,000 - $70,000',
+                'experience': '1+ year',
+                'location': 'Kyoto',
+                'industry': 'Education',
+            },
+            {
+                'title': 'Data Entry/Administrative Assistant',
+                'description': 'Perform data entry tasks, manage schedules and documents, and provide general administrative support in an office setting.',
+                'salary': '$12,000 - $20,000 per month',
+                'experience': 'fresher',
+                'location': 'Osaka',
+                'industry': 'Technology',
+            },
+            {
+                'title': 'Customer Service Representative ',
+                'description': 'Provide exceptional customer service to clients over the phone, email, or chat. Troubleshoot problems and ensure customer satisfaction. Must be fluent in Hindi and English.',
+                'salary': '$15,000 - $25,000 per month',
+                'experience': 'fresher',
+                'location': 'Tokyo',
+                'industry': 'Technology',
+            },
+        ];
+
+        const jobResultsContainer = document.getElementById('job-results');
+        const jobSearchForm = document.getElementById('job-search-form');
+
+        jobSearchForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const industry = document.getElementById('industry').value;
+            const location = document.getElementById('location').value;
+
+            const filteredJobs = filterJobs(jobs, industry, location);
+            displayJobs(filteredJobs);
+        });
+
+        function filterJobs(allJobs, industryFilter, locationFilter) {
+            return allJobs.filter(job => {
+                const industryMatch = !industryFilter || job.industry === industryFilter;
+                const locationMatch = !locationFilter || job.location === locationFilter;
+                return industryMatch && locationMatch;
+            });
+        }
+
+        function displayJobs(filteredJobs) {
+            jobResultsContainer.innerHTML = ''; // Clear previous results
+
+            if (!filteredJobs.length) {
+                jobResultsContainer.textContent = 'No jobs found matching your criteria.';
+                return;
+            }
+
+            filteredJobs.forEach(job => {
+                const card = createJobCard(job);
+                jobResultsContainer.appendChild(card);
+            });
+        }
+
+        function createJobCard(job) {
+            const card = document.createElement('div');
+            card.classList.add('job-card'); // Add a CSS class for styling
+            card.classList.add('job-card', 'border', 'border-2','p-4','m-4'); // Add a CSS class for styling
+
+            // Create elements for each job detail
+            const cardHeader = document.createElement('h3');
+            cardHeader.classList.add('card-header');
+            cardHeader.textContent = job.title;
+
+            const cardBody = document.createElement('div');
+            cardBody.classList.add('card-body');
+
+            const descriptionParagraph = document.createElement('p');
+            descriptionParagraph.textContent = job.description;
+
+            const salaryParagraph = document.createElement('p');
+            salaryParagraph.textContent = `Salary: ${job.salary}`;
+
+            const experienceParagraph = document.createElement('p');
+            experienceParagraph.textContent = `Experience: ${job.experience}`;
+
+            const locationParagraph = document.createElement('p');
+            locationParagraph.textContent = `Location: ${job.location}`;
+
+            const applyButton = document.createElement('button');
+            applyButton.classList.add('btn', 'btn-primary'); // Add CSS classes for styling
+            applyButton.textContent = 'Apply Now'; // Customize text if needed
+
+            // Optional: Add event listener for apply button (replace with your desired action)
+            // applyButton.addEventListener('click', () : {
+            //   // Handle apply button click here
+            // });
+
+            // Assemble the card structure
+            cardBody.appendChild(descriptionParagraph);
+            cardBody.appendChild(salaryParagraph);
+            cardBody.appendChild(experienceParagraph);
+            cardBody.appendChild(locationParagraph);
+            cardBody.appendChild(applyButton);
+
+            card.appendChild(cardHeader);
+            card.appendChild(cardBody);
+
+            return card;
+        }
+
+
+    </script>
+</body>
+
+</html>
